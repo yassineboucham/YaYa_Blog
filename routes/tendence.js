@@ -1,20 +1,23 @@
 import express from "express";
 const router = express.Router();
 
-router.get("/tendence", (req, res) => {
-    res.render('pages/tendece', {type: "All"});
+// Base route
+router.get("/", (req, res) => {
+    res.render("pages/tendence", { type: "All" });
 });
 
-router.get("/tendence/Resepis", (req, res) => {
-    res.render('pages/tendece', {type: "Resepis"});
+// Subcategories
+router.get("/Recipes", (req, res) => {
+    console.log("Received request for /tendence/Recipes");
+    res.render("pages/tendence", { type: "Recipes" });
 });
 
-router.get("/tendence/Movies", (req, res) => {
-    res.render('page/tendece', {type: "Movies"});
+router.get("/Movies", (req, res) => {
+    res.render("pages/tendence", { type: "Movies" });
 });
 
-router.get("/tendece/Books", (req, res) => {
-    res.render('/page/tendece', {type: "Books"});
+router.get("/Books", (req, res) => {
+    res.render("pages/tendence", { type: "Books" });
 });
 
 export default router;
