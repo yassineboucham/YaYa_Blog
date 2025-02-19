@@ -1,9 +1,8 @@
 import express from "express";
-
 const router = express.Router();
 
-router.get("/logyoublog", (req, res) => {
-    res.render("pages/logYourBlog", {titel: "Log You Blog"});
+router.get("/logyourblog", (req, res) => {
+    res.render("pages/logYourBlog", { title: "log your blog" });
 });
 
 export default router;

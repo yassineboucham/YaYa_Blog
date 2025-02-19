@@ -15,7 +15,7 @@ app.use(express.static("public"));
 // Use Routes
 app.use("/", indexRoutes);
 app.use("/tendence", tendenceRoutes); // Ensure this line is present
-app.use("/logyoublog", logYouBlogRoutes);
+app.use("/logyourblog", logYouBlogRoutes);
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
