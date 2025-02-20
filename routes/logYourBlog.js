@@ -1,8 +1,8 @@
 import express from "express";
 const router = express.Router();
 
-router.get("/logyourblog", (req, res) => {
-    res.render("pages/logYourBlog", { title: "log your blog" });
+router.get("/", (req, res) => {
+    res.render("pages/logYourBlog.ejs", { title: "Log Your Blog" });
 });
 
 export default router;
