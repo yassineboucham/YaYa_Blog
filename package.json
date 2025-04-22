@@ -1,7 +1,7 @@
 {
-  "name": "yaya_blog",
+  "name": "6.1-blog-api-project",
   "version": "1.0.0",
-  "description": "The goal of this project is to create a Blog web application using Node.js, Express.js, and EJS. The application will allow users to create and view blog posts. Posts will not persist between sessions as no database will be used in this version of the application. Styling will be an important aspect of this project to ensure a good user experience.",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   }
 }
